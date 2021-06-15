@@ -21,7 +21,7 @@ const guessNumber = () => {
     let selectedNumber = parseInt(document.getElementById("number").value);
 
     // Si el numero introducido no esta vacio y es positivo
-    if( selectedNumber != "" && selectedNumber >= 0 && selectedNumber <= randomNumber) {
+    if( selectedNumber != "" && selectedNumber >= 0 && selectedNumber <= max) {
         answer.style.display = "block";
         answer.classList.add("hints");
         // Si el numero es menor al numero aleatorio
