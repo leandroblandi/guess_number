@@ -1,0 +1,176 @@
+/* Reset */
+* {
+    font-family: "Segoe UI";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #262626;
+    user-select: none;
+}
+
+/* Title config */
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h1 span.subtitle {
+    color: #676767;
+}
+
+/* Attempts clasifications */
+
+span.normal {
+    color:rgb(73, 156, 34);
+}
+
+span.warning {
+    color:#ff0000;
+}
+
+.header span {
+    margin: 20px 0 20px 0;
+    font-weight: 700;
+    color:#676767;
+}
+
+/* Containers config */
+
+.root {
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    background: #efefef;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 2px rgba(38,38,38,0.49);
+}
+
+.root .header {
+    width: 100%;
+}
+
+.root .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .entry-wrapper {
+    margin-top: 10px;
+    width:60%;
+}
+
+/* Entries config */
+
+.entry-wrapper input {
+    width: 100%;
+    border-radius: 5px;
+    border: 0.5px solid #a0a0a0;
+    transition: all .2s;
+    padding-left: 10px;
+}
+
+/* Buttons config */
+
+.button-wrapper {
+    width: 35%;
+}
+
+/* Height config for input and button */
+
+input, button {
+    height: 30px;
+}
+
+/* Focus 'n' hover in input  */
+
+input:hover, input:focus {
+    border: none;
+    transition: all .5s;
+    box-shadow: 0px 0px 4px 2px #FF6224;
+    outline: 0 none;
+}
+
+/* Button style */
+
+.content .button-wrapper button {
+    transition: all .5s;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    background: rgb(201, 95, 45);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.button-wrapper button:hover {
+    transition: all .5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.button-wrapper button:disabled {
+    background: rgb(175, 173, 173);
+    color: #262626;
+    cursor:not-allowed;
+}
+
+/* Hints and Result container config */
+
+.answer-wrapper {
+    margin: 2em auto 0;
+    display: none;
+    padding: 0.5em;
+    text-align: center;
+    width: 50%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Hints types */
+
+.hints {
+    color: #fff;
+    background: rgb(68, 140, 182);
+}
+
+/* If user win, apply this style */
+
+.won {
+    background: rgb(73, 156, 34);
+    color:#fff;
+}
+
+/* If user lose, apply this style */
+
+.lose {
+    background: rgb(156, 34, 34);
+    color:#fff;
+}
+
+/* Tablet and mobile (200px-900px) */
+@media only screen and (max-width:900px) {
+
+    h1, h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .root {
+        width: 95%;
+        padding: 1em;
+        text-align: center;
+        min-width: 200px;
+        max-width: 1600px;
+    }
+    .root .content,
+    .content .entry-wrapper,
+    .content .button-wrapper {
+        width: 100%;
+    }
+    .root .content .button-wrapper button {
+        margin: 0.5em 0;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Averigua el número</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <h1>Juego: <span class="subtitle">Averigua el Número</span></h1>
+            <span>Intentos:</span>&nbsp;<span id="attempts" class="normal"></span>
+        </div>
+        <div class="content">
+            <div class="entry-wrapper">
+                <input autocomplete="off" autofocus type="number" class="number" id="number" placeholder=" Número entre 0 y 10">
+            </div>
+            <div class="button-wrapper">
+                <button class="submit-button" id="submit-button">Probar</button>
+            </div>
+            <div class="answer-wrapper" id="answer-wrapper">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
